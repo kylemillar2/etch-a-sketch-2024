@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    width: 80%;
+    aspect-ratio: 1/1;
+    flex-wrap: wrap;
+    border: 5px solid grey;
+}
+
+.square {
+    width: 6.25%;
+    height: 6.25%;
+    background-color: white;
+}
+
+.square:not(.filled-cell):hover {
+    background-color: lightgray;
+}
+
+.filled-cell {
+    background-color: black;
+}
